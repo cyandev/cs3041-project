@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Changa:wght@200..800&family=Comfortaa:wght@300..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+
+    <body>
+        <div class="page" id="landing" style="display:none">
+            <div class="title">
+                PartStream
+                <div class="blueBar"></div>
+            </div>
+            <div class="button" id="addPart">
+                <div class="subtitle">Add a Part</div>
+                <p>Add a Part + Description</p>
+            </div>
+            <div class="button" id="findPart">
+                <div class="subtitle">Find a Part</div>
+                <p>Find and Edit Parts</p>
+            </div>
+        </div>
+
+        <div class="page" id="add">
+            <div class="title">
+                PartStream
+                <div class="blueBar"></div>
+            </div>
+            <div id="formContainer">
+                <p class="label name">Part Name</p>
+                <p class="label qty">Quantity</p>
+                <input type="text" id="name" class="name" placeholder="Name">
+                <input type="number" id="qty" class="qty" placeholder="Qty">
+                <p class="label location">Location</p>
+                <input type="text" id="location" class="location" placeholder="Location">
+                <p class="label location">Description</p>
+                <textarea id="description" class="description"></textarea>
+                <div id="submit">Submit</div>
+            </div>
+        </div>
+
+        <script src="./script.js"></script>
+    </body>
+</html>
